@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/57170b3cf5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-container" id="bg">
+        <header class="header" id="container">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <div>
+                        <i class="fa-solid fa-crown"></i>
+                        <span>KING</span>
+                    </div>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Shop</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Brand</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <button class="signup-button">Sign Up</button>
+                        </li>
+    
+                    </ul>
+                    <div class="nav__close" id="nav-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    
+            </nav>
+    
+    
+        </header>
+        <div class="text-container">
+            <div class="container">
+                <div id="productDetails" class="items"></div>
+                <div class="icon-container" >
+                    <i class="fa-brands fa-facebook icon"></i>
+                    <i class="fa-brands fa-twitter icon"></i>
+                    <i class="fa-brands fa-youtube icon"></i>
+                </div>
+              </div>
+              
+              <div class="container">
+                <div class="carousel-container">
+                  <div class="carousel-item active">
+                    <img src="Group 4.png" alt="Image 1" class="image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Group 5.png" alt="Image 2" class="image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Group 6.png" alt="Image 3" class="image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Group 7.png" alt="Image 4" class="image">
+                  </div>
+                  <div class="carousel-navigation left" onclick="changeSlide(-1)">◀</div>
+                  <div class="carousel-navigation right" onclick="changeSlide(1)">▶</div>
+                </div>
+              </div>
+
+        </div>   
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

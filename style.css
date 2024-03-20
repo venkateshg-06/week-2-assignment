@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    font-family: "sofia sans", "poppins";
+}
+.bg-container{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav__toggle,
+.nav__close {
+    color: black;
+
+}
+.nav_menu{
+    width: 40%;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    transition-duration: 2s;
+    transition-property: transform;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav__item {
+    list-style-type: none;
+    color: black;
+}
+
+.nav__logo {
+    color: black;
+    font-size: 30px;
+
+}
+.signup-button{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 130px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: right;
+
+}
+
+@media screen and (max-width:768px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        background-image: linear-gradient(to right, #F4A764,#FFDEC2, 0.1);
+        padding-top: 40px;
+        transition: right .5s;
+
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        transition: right .20s;
+
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+
+    .show-menu {
+        right: 0px;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__close {
+        display: none;
+    }
+}
+
+.container {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .carousel-item {
+    display: none;
+  }
+  .carousel-item.active {
+    display: block;
+  }
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .carousel-navigation.left {
+    left: 10px;
+  }
+  .carousel-navigation.right {
+    right: 10px;
+  }
+
+  .brand-heading{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  .choose {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+  }
+  span {
+    color: black;
+    font-weight: 500;
+  }
+  .description{
+    font-size: 18px;
+    color: black;
+  }
+
+  .price{
+    font-size: 40px ;
+    color:white ;
+    font-weight: 500;
+  }
+  .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+  }
+  .image{
+    height: 50%;
+    width: 50%;
+  }
+  .carousel-container{
+    text-align: center;
+  }
+  .text-container{
+    padding: 30px;
+  }
+  .icon {
+    color: white;
+    font-size: 22px;
+  }
+  .icon-container{
+    width: 15%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
